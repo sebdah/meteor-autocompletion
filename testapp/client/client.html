@@ -1,0 +1,24 @@
+<head>
+  <title>meteor-autocompletion test app</title>
+</head>
+
+<body>
+  <h1>meteor-autocomplete test app</h1>
+  {{>search}}
+  <hr>
+  {{>results}}
+</body>
+
+<template name="search">
+  <h3>Search</h3>
+  <input type="text" id="searchBox">
+</template>
+
+<template name="results">
+  <h3>Results</h3>
+  <div id="autocompletionResults">
+    {{#each results}}
+      <div class="result">Result: {{name}}</div>
+    {{/each}}
+  </div>
+</template>
