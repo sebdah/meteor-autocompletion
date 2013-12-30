@@ -1,0 +1,4 @@
+meteor-autocompletion
+=====================
+
+**UNDER DEVELOPMENT**
