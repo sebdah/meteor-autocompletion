@@ -1,5 +1,10 @@
 {
+  "meteor": {
+    "branch": "master"
+  },
   "packages": {
-    "jquery-ui": {}
+    "autocompletion": {
+        "path": "/Users/sebastian/git/sebdah/meteor-autocompletion"
+    }
   }
 }

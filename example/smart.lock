@@ -2,9 +2,14 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "jquery-ui": {}
+      "autocompletion": {
+        "path": ".."
+      }
     },
     "packages": {
+      "autocompletion": {
+        "path": ".."
+      },
       "jquery-ui": {
         "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
         "tag": "v1.9.2",
