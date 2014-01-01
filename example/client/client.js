@@ -18,6 +18,9 @@ function autocompleter (config) {
   filter = {};
   filter['limit'] = config['limit'];
   filter['sort'] = config['sort'];
+  filter['fields'] = {};
+  filter['fields'][config['field']] = 1; // Only include the searchable
+                                         // field in the result
 
   // Find all results
   results = config['collection'].find(query, filter).fetch();
