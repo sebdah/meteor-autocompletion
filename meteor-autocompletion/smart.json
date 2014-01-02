@@ -3,7 +3,7 @@
     "description": "Autocompletion for forms using MeteorJS collections",
     "homepage": "https://github.com/sebdah/meteor-autocompletion",
     "author": "Sebastian Dahlgren (https://github.com/sebdah/)",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "git": "https://github.com/sebdah/meteor-autocompletion.git",
     "packages": {
         "jquery-ui": "1.9.2"
