@@ -5,6 +5,8 @@ meteor-autocompletion
 
 ![Autocompleting a name](https://raw.github.com/sebdah/meteor-autocompletion/master/docs/example.png)
 
+**Using the package? Please star this repo**
+
 Installation
 ------------
 
@@ -79,3 +81,5 @@ Author
 ------
 
 This project is maintained by [Sebastian Dahlgren](http://www.sebastiandahlgren.se) ([GitHub](https://github.com/sebdah) | [Twitter](https://twitter.com/sebdah) | [LinkedIn](http://www.linkedin.com/in/sebastiandahlgren))
+
+Gratefully receiving donations at [Gittip](https://www.gittip.com/sebdah/).
