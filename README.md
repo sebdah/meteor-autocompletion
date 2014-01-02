@@ -5,7 +5,8 @@ meteor-autocompletion
 
 ![Autocompleting a name](https://raw.github.com/sebdah/meteor-autocompletion/master/docs/example.png)
 
-**Using the package? Please star this repo**
+**Using the package? Please star this repo!**
+**Gratefully receiving donations at [Gittip](https://www.gittip.com/sebdah/).**
 
 Installation
 ------------
