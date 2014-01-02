@@ -6,6 +6,6 @@
     "version": "0.1.0",
     "git": "https://github.com/sebdah/meteor-autocompletion.git",
     "packages": {
-        "jquery-ui": {}
+        "jquery-ui": "1.9.2"
     }
 }
