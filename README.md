@@ -82,7 +82,7 @@ The following configuration options can be sent to `AutoCompletion.autocomplete`
 
 You can enable debug output by adding the following to your `Template.template_name.rendered` function:
 
-  AutoCompletion.enableLogging = true;
+    AutoCompletion.enableLogging = true;
 
 Author
 ------
