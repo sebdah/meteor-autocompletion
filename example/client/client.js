@@ -2,6 +2,7 @@
 * Template - search
 */
 Template.search.rendered = function () {
+  AutoCompletion.enableLogging = true;
   AutoCompletion.init("input#searchBox");
 }
 

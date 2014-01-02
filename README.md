@@ -78,6 +78,12 @@ The following configuration options can be sent to `AutoCompletion.autocomplete`
     sort        No        Pass a MongoDB sorting object to the query
     filter      No        Pass additional filtering rules to the query
 
+### Enable debug output
+
+You can enable debug output by adding the following to your `Template.template_name.rendered` function:
+
+  AutoCompletion.enableLogging = true;
+
 Author
 ------
 

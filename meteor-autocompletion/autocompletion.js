@@ -1,11 +1,24 @@
 AutoCompletion = {};
 
+AutoCompletion.enableLogging = false;
+
+var log = function (level, message) {
+  if (AutoCompletion.enableLogging)
+    console.log('AutoCompletion - ' + level + ' - ' + message);
+}
+
+var logObj = function (obj) {
+  if (AutoCompletion.enableLogging)
+    console.dir(obj);
+}
+
 /**
  * Initialize element with jQueryUI autocomplete
  * @param element
  */
 AutoCompletion.init = function (element) {
   $(element).autocomplete({ source: []});
+  log('INFO', 'Initalized element(s) identified by ' + element);
 }
 
 /**
@@ -14,7 +27,7 @@ AutoCompletion.init = function (element) {
  */
 AutoCompletion.autocomplete = function (config) {
   if (typeof(config) === 'undefined'){
-    console.log('Missing required config parameter in autocompleter()');
+    log('ERROR', 'Missing required config parameter in autocompleter()');
     return
   }
 
@@ -27,6 +40,8 @@ AutoCompletion.autocomplete = function (config) {
     query = initQuery;
   else
     query = mergeObjects(initQuery, config['filter']);
+  log('DEBUG', 'Query object: ');
+  logObj(query);
 
   // Build filtering
   filter = {};
@@ -35,9 +50,13 @@ AutoCompletion.autocomplete = function (config) {
   filter['fields'] = {};
   filter['fields'][config['field']] = 1; // Only include the searchable
                                          // field in the result
+  log('DEBUG', 'Filter object: ');
+  logObj(filter);
 
   // Find all results
   results = config['collection'].find(query, filter).fetch();
+  log('DEBUG', 'Results object: ');
+  logObj(results);
 
   // Get the name parameter from the results
   autocompleteResults = []
