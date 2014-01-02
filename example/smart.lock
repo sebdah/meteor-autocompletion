@@ -3,12 +3,12 @@
   "dependencies": {
     "basePackages": {
       "autocompletion": {
-        "path": ".."
+        "path": "../meteor-autocompletion"
       }
     },
     "packages": {
       "autocompletion": {
-        "path": ".."
+        "path": "../meteor-autocompletion"
       },
       "jquery-ui": {
         "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
