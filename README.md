@@ -72,3 +72,8 @@ The following configuration options can be sent to `AutoCompletion.autocomplete`
     limit           Limit the number of results. `0` will return all results.
     sort            Pass a MongoDB sorting object to the query
     filter          Pass additional filtering rules to the query
+
+Author
+------
+
+This project is maintained by [Sebastian Dahlgren](http://www.sebastiandahlgren.se) ([GitHub](https://github.com/sebdah) | [Twitter](https://twitter.com/sebdah) | [LinkedIn](http://www.linkedin.com/in/sebastiandahlgren))
