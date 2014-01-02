@@ -1,6 +1,6 @@
 {
     "name": "autocompletion",
-    "description": "input autocompletion using meteor collections",
+    "description": "Autocompletion for forms using MeteorJS collections",
     "homepage": "https://github.com/sebdah/meteor-autocompletion",
     "author": "Sebastian Dahlgren (https://github.com/sebdah/)",
     "version": "0.0.1",
