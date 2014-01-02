@@ -67,8 +67,13 @@ Take extra care looking at the parameters to `AutoCompletion.autocomplete`. We a
 The following configuration options can be sent to `AutoCompletion.autocomplete`:
 
 `element` - DOM identifier for the element
+
 `collection` - MeteorJS collection object
+
 `field` - Field name in the collection to search
+
 `limit` - Limit the number of results. `0` will return all results.
+
 `sort` - Pass a MongoDB sorting object to the query
+
 `filter` - Pass additional filtering rules to the query
