@@ -1,6 +1,11 @@
 RELEASE NOTES
 =============
 
+0.1.3
+-----
+
+- Fixed font size in autocompletion
+
 0.1.2
 -----
 
