@@ -1,6 +1,14 @@
 RELEASE NOTES
 =============
 
+0.1.4
+-----
+
+- [Add ease of use and limitations to README #5](https://github.com/sebdah/meteor-autocompletion/issues/5)
+- [Fix some typos in README #4](https://github.com/sebdah/meteor-autocompletion/issues/4)
+
+Thanks [@dandv](https://github.com/dandv) for submitting the pull requests!
+
 0.1.3
 -----
 

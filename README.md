@@ -1,7 +1,7 @@
 meteor-autocompletion
 =====================
 
-`meteor-autocompletion` provides autocompletion to `<input>` fields in [MeteorJS](https://meteor.com). The package will search for the inputed text in a MeteorJS collection and return similar results. Results can be choosed using the arrow keys and enter or by clicking with the mouse.
+`meteor-autocompletion` provides simple, easy-to-use autocompletion to `<input>` fields in [MeteorJS](https://meteor.com). The package will search for the inputed text in a MeteorJS collection and return similar results. Results can be choosed using the arrow keys and enter or by clicking with the mouse.
 
 ![Autocompleting a name](https://raw.github.com/sebdah/meteor-autocompletion/master/docs/example.png)
 
@@ -13,12 +13,12 @@ Installation
 
 Install `meteor-autocompletion` using [Meteorite](http://oortcloud.github.io/meteorite/):
 
-    mrt add meteor-autocomplete
+    mrt add meteor-autocompletion
 
 Configuration
 -------------
 
-We will use a collection called `Friends` in the example below to search for friends names when typing in the `<input>` field.
+We will use a collection called `Friends` in the example below to search for names when typing in the `<input>` field.
 
 Check out the MeteorJS example app in the `example` directory for a full example.
 
@@ -63,7 +63,7 @@ Then add JavaScript code similar to the below.
       }
     }
 
-Take extra care looking at the parameters to `AutoCompletion.autocomplete`. We are in this example fetching data from the element with identifyer `input#searchBox`. We will then match the text with the `name` field in the `Friends` collection. You can limit the number of returned rows using `limit` and send any sorting directions using `sort`. In this case, we're sorting the names from A to Z.
+Take extra care looking at the parameters to `AutoCompletion.autocomplete`. We are in this example fetching data from the element with the id `input#searchBox`. We will then match the text with the `name` field in the `Friends` collection. You can limit the number of returned rows using `limit` and send any sorting directions using `sort`. In this case, we're sorting the names from A to Z.
 
 ### Configuration options
 
@@ -83,6 +83,12 @@ The following configuration options can be sent to `AutoCompletion.autocomplete`
 You can enable debug output by adding the following to your `Template.template_name.rendered` function:
 
     AutoCompletion.enableLogging = true;
+
+Current limitations
+-------------------
+* Only one collection can be searched. For searching in multiple collections, see the [autocomplete](https://atmosphere.meteor.com/package/autocomplete) package
+* Searching is done only in one field of the collection
+* Search results are simply the values of matching fields. For customized search results using a template ([example](http://twitter.github.io/typeahead.js/examples/), see the [typeahead](https://atmosphere.meteor.com/package/typeahead) package.
 
 Author
 ------
