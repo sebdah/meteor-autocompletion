@@ -84,11 +84,11 @@ You can enable debug output by adding the following to your `Template.template_n
 
     AutoCompletion.enableLogging = true;
 
-Current limitation
-------------------
+Current limitations
+-------------------
 * Only one collection can be searched. For searching in multiple collections, see the [autocomplete](https://atmosphere.meteor.com/package/autocomplete) package
-* searching is done only in one field of the collection
-* search results are simply the values of matching fields. For customized search results using a template ([example](http://twitter.github.io/typeahead.js/examples/), see the [typeahead](https://atmosphere.meteor.com/package/typeahead) package.
+* Searching is done only in one field of the collection
+* Search results are simply the values of matching fields. For customized search results using a template ([example](http://twitter.github.io/typeahead.js/examples/), see the [typeahead](https://atmosphere.meteor.com/package/typeahead) package.
 
 Author
 ------
