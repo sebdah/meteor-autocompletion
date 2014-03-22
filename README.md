@@ -1,7 +1,7 @@
 meteor-autocompletion
 =====================
 
-`meteor-autocompletion` provides simple, easy-to-use autocompletion to `<input>` fields in [MeteorJS](https://meteor.com). The package will search for the inputed text in a MeteorJS collection and return similar results. Results can be choosed using the arrow keys and enter or by clicking with the mouse.
+`meteor-autocompletion` provides simple, easy-to-use autocompletion to `<input>` fields in [MeteorJS](https://meteor.com). The package will search for the inputed text in a client-side Meteor collection and return similar results. Results can be selected using the arrow keys and Enter, or by clicking with the mouse.
 
 ![Autocompleting a name](https://raw.github.com/sebdah/meteor-autocompletion/master/docs/example.png)
 
@@ -86,7 +86,8 @@ You can enable debug output by adding the following to your `Template.template_n
 
 Current limitations
 -------------------
-* Only one collection can be searched. For searching in multiple collections, see the [autocomplete](https://atmosphere.meteor.com/package/autocomplete) package
+* Only one collection can be searched. For searching in multiple collections, see the [autocomplete](https://atmosphere.meteor.com/package/autocomplete) package.
+* Searching is only done among the records of the collection that area loaded on the client. To search in large collections that are stored on the server, see the [autocomplete](https://beta.atmospherejs.com/package/autocomplete) package.
 * Searching is done only in one field of the collection
 * Search results are simply the values of matching fields. For customized search results using a template ([example](http://twitter.github.io/typeahead.js/examples/)), see the [typeahead](https://atmosphere.meteor.com/package/typeahead) package.
 
