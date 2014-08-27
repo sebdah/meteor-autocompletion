@@ -1,6 +1,11 @@
 RELEASE NOTES
 =============
 
+0.2.0
+-----
+
+- Upgraded package to be 0.9.0 compatible
+
 0.1.4
 -----
 
