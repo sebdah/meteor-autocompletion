@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Input autocompletion using data from Meteor collections",
-  version: "0.1.4",
+  version: "0.2.0",
   git: "https://github.com/sebdah/meteor-autocompletion.git"
 });
 
