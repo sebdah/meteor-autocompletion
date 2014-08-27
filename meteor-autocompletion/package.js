@@ -1,9 +1,12 @@
 Package.describe({
-    summary: "Input autocompletion using data from Meteor collections"
+    summary: "Input autocompletion using data from Meteor collections",
+  version: "0.1.4",
+  git: "https://github.com/sebdah/meteor-autocompletion.git"
 });
 
 Package.on_use(function (api) {
-    api.use('jquery-ui', 'client');
+  api.versionsFrom("METEOR@0.9.0");
+    api.use("mrt:jquery-ui@1.9.2", 'client');
 
     api.export('AutoCompletion', 'client');
 
