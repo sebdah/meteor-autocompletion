@@ -13,7 +13,7 @@ Installation
 
 Install `meteor-autocompletion` using [Meteorite](http://oortcloud.github.io/meteorite/):
 
-    mrt add autocompletion
+    meteor add sebdah:autocompletion
 
 Configuration
 -------------
