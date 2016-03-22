@@ -57,6 +57,10 @@ AutoCompletion.autocomplete = function (config) {
   results = config['collection'].find(query, filter).fetch();
   log('DEBUG', 'Results object: ');
   logObj(results);
+  
+   if(config['distinctElements'] == true) {
+    results = _.uniq(myArray, false, function(d) {return d.config['field']});
+  }
 
   // Get the name parameter from the results
   autocompleteResults = []
