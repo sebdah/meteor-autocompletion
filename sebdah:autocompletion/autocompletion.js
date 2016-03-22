@@ -69,7 +69,15 @@ AutoCompletion.autocomplete = function (config) {
   };
 
   // Update the autocomplete result list
-  $(config['element']).autocomplete({ source: autocompleteResults });
+  if(config['onselect']) {
+	    $(config['element']).autocomplete({ 
+		      source: autocompleteResults ,
+		      select: config['onselect']
+	    });
+  }
+  else {
+	    $(config['element']).autocomplete({ source: autocompleteResults });
+  }
 }
 
 /**
